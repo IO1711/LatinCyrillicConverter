@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" th:href="@{css/index.css}">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Drilling reports</title>
+    </head>
+
+    <body>
+        
+        
+        
+        <a href="/addData">Add data</a>
+        <div id="container">
+        <select id="inputLang" onchange="setOutputLang()">
+            <option value="Uzbek">O'zbek</option>
+            <option value="Кирил">Кирил</option>
+        </select>
+        <textarea id="inputText"></textarea>
+        <button type="button" id="convertButton" onclick="convert()">Convert</button>
+        <select id="outputLang" disabled>
+            <option value="Uzbek">O'zbek</option>
+            <option value="Кирил">Кирил</option>
+        </select>
+        <textarea id="outputText" readonly></textarea>
+        </div>
+        
+        <script type="text/javascript" th:src="@{js/index.js}"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function(){
+                setOutputLang();
+            })
+        </script>
+        
+    </body>
+
+</html>
