@@ -90,3 +90,17 @@ textarea {
     width: 100%; /* Prevent width issues */
     box-sizing: border-box; /* Include padding and border in the width */
 }
+
+@media(max-width: 767px) {
+    body{
+        padding-left: 0.5%;
+    }
+
+    #header{
+        width: 98vw;
+    }
+
+    #container{
+        width: 98vw;
+    }
+}
