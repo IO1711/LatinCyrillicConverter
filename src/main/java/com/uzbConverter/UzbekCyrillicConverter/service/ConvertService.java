@@ -291,6 +291,9 @@ public class ConvertService {
                 else if(text.charAt(i) == 'Э'){
                     convertedText += "E";
                 }
+                else if(text.charAt(i) == 'ь'){
+                    continue;
+                }
                 else{
                     letter = alphabetRepository.findByCyrillic("" + text.charAt(i));
                     convertedText += letter.getLatin();
