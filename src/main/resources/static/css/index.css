@@ -1,19 +1,84 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(65, 181, 111);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0%;
+    
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(244, 244, 244);
+    padding-left: 15%;
+}
+
+#header{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    background-color: #2d2b39/*rgb(255, 217, 102) 27262d*/;
+    /*background-image: url('/assets/cars_bg.jpg');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 15vh;
+    width: 70vw;
+    max-width: 100%;
+    color: aliceblue;
+    /*margin-left: 5vw;
+
+    color: #040404;
+    /*border-bottom-style: solid;
+    border-width: 1px;
+    border-color: black;*/
+}
+
+#header h1{
+    flex: 6;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+#logo{
+    height: 100%;
+    width: auto;
+    margin-left: 5%;
 }
 
 #container{
+    
+    
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    width: 80vw;
+    width: 70vw;
     height: 80vh;
+    margin-top: 0.5vh;
+
+    /*margin-left: 5vw;*/
+    max-width: 100%;
+    position: relative;
+    
 }
 
 #container textarea{
     flex: 1;
     width: 100%;
     height: 20%;
-    margin: 1%;
+    margin-top: 1%;
+    background-image: url('/assets/full_logo_white.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container select, button{
+    margin-top: 1%;
 }
 
 
